@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pack Ouro do Serralheiro</title>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1528476445723820');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1528476445723820&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-black: #0b0f14;
+      --bg-section: #20242b;
+      --card-bg: #161a20;
+      --card-border: #2a3038;
+      --orange: #ff9300;
+      --text-light: #f4f4f5;
+      --text-muted: #8f96a3;
+      --button-green: #ff9b00;
+      --button-green-dark: #f36b00;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg-black);
+      color: var(--text-light);
+      font-family: "Inter", Arial, sans-serif;
+    }
+
+    img,
+    svg {
+      display: block;
+    }
+
+    .pagina {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      background: var(--bg-black);
+    }
+
+    .logo-topo {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      z-index: 20;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #ffffff;
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 1;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
+
+    .logo-topo svg {
+      width: 30px;
+      height: 30px;
+      color: var(--orange);
+      flex: 0 0 auto;
+    }
+
+    .linha-logo {
+      position: absolute;
+      top: 58px;
+      left: 0;
+      z-index: 19;
+      width: 100%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.18);
+      pointer-events: none;
+    }
+
+    .container {
+      width: min(100%, 430px);
+      margin: 0 auto;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    .titulo-impacto {
+      margin: 0;
+      color: var(--orange);
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-weight: 400;
+      letter-spacing: 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .botao-principal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 62px;
+      padding: 17px 34px;
+      border: 0;
+      border-radius: 9px;
+      background: linear-gradient(180deg, var(--button-green), var(--button-green-dark));
+      box-shadow: 0 0 34px rgba(255, 132, 0, 0.32);
+      color: #101215;
+      cursor: pointer;
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-size: clamp(17px, 4.7vw, 22px);
+      letter-spacing: 1px;
+      line-height: 1;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: transform 180ms ease, filter 180ms ease;
+    }
+
+    .botao-principal:hover {
+      box-shadow: 0 0 42px rgba(255, 132, 0, 0.44);
+      filter: brightness(1.04);
+      transform: translateY(-1px);
+    }
+
+    .botao-principal:active {
+      transform: translateY(0);
+    }
+
+    .botao-principal:focus-visible {
+      outline: 3px solid rgba(255, 255, 255, 0.8);
+      outline-offset: 4px;
+    }
+
+    /* DOBRA 1 */
+    .dobra-1 {
+      background: var(--bg-black);
+      padding: 99px 0 64px;
+    }
+
+    .dobra-1 .titulo-impacto {
+      max-width: 360px;
+      margin: 0 auto;
+      font-size: clamp(34px, 9.4vw, 41px);
+      line-height: 1.15;
+    }
+
+    .subtitulo-hero {
+      width: 100%;
+      max-width: 398px;
+      margin: 29px auto 0;
+      color: #d4d4d8;
+      font-family: "Inter", Arial, sans-serif;
+      font-size: clamp(15px, 4.08vw, 20px);
+      font-weight: 400;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    .subtitulo-hero .linha-subtitulo {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .subtitulo-hero strong {
+      display: block;
+      color: var(--orange);
+      font-weight: 400;
+      white-space: nowrap;
+    }
+
+    .imagem-produto {
+      width: 100%;
+      margin: 43px auto 0;
+      border-radius: 8px;
+      background: #111820;
+      overflow: hidden;
+    }
+
+    .imagem-produto img {
+      width: 100%;
+      min-height: clamp(292px, 91vw, 392px);
+      height: auto;
+      object-fit: contain;
+    }
+
+    .texto-apoio {
+      max-width: 390px;
+      margin: 43px auto 0;
+      color: var(--text-muted);
+      font-size: clamp(17px, 4.7vw, 20px);
+      font-weight: 400;
+      line-height: 1.48;
+    }
+
+    .acao-hero {
+      margin-top: 31px;
+      text-align: center;
+    }
+
+    .acao-hero .botao-principal {
+      width: min(100%, 284px);
+    }
+
+    /* DOBRA 2 */
+    .dobra-2 {
+      background: var(--bg-section);
+      padding: 66px 0 25px;
+    }
+
+    .dobra-2 .titulo-impacto {
+      font-size: clamp(26px, 7.8vw, 34px);
+      line-height: 1.12;
+    }
+
+    .intro-dobra-2 {
+      max-width: 360px;
+      margin: 15px auto 0;
+      color: #e7e7e8;
+      font-size: clamp(17px, 4.7vw, 20px);
+      font-weight: 400;
+      line-height: 1.45;
+      text-align: center;
+    }
+
+    .lista-dores {
+      display: grid;
+      gap: 26px;
+      margin-top: 52px;
+    }
+
+    .card-dor {
+      min-height: 180px;
+      padding: 27px 24px 24px;
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      background: var(--card-bg);
+    }
+
+    .icone-dor {
+      width: 34px;
+      height: 34px;
+      margin-bottom: 24px;
+      color: var(--orange);
+    }
+
+    .card-dor h3 {
+      margin: 0;
+      color: #f2f2f3;
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-size: clamp(22px, 6.1vw, 27px);
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 1.12;
+    }
+
+    .card-dor p {
+      margin: 12px 0 0;
+      color: var(--text-muted);
+      font-size: clamp(15px, 4.18vw, 18px);
+      font-weight: 400;
+      line-height: 1.38;
+    }
+
+    /* DOBRA 3 */
+    .dobra-3 {
+      background: var(--bg-black);
+      padding: 84px 0 91px;
+    }
+
+    .dobra-3 .titulo-impacto {
+      font-size: clamp(35px, 9.6vw, 45px);
+      line-height: 1.1;
+    }
+
+    .texto-pack {
+      width: min(calc(100vw - 34px), 392px);
+      margin: 22px auto 0;
+      color: var(--text-muted);
+      font-family: "Inter", Arial, sans-serif;
+      font-size: clamp(16px, 4.45vw, 21px);
+      font-weight: 400;
+      line-height: 1.48;
+      text-align: left;
+    }
+
+    .texto-pack span {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .frase-pack {
+      max-width: 470px;
+      margin: 63px auto 0;
+      color: #f2f2f3;
+      font-size: clamp(17px, 4.75vw, 22px);
+      font-weight: 400;
+      line-height: 1.42;
+      text-align: center;
+    }
+
+    .frase-pack span {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .imagem-pack-detalhe {
+      width: 100%;
+      min-height: clamp(365px, 92vw, 520px);
+      margin: 56px auto 0;
+      border-radius: 11px;
+      background: #101820;
+      overflow: hidden;
+    }
+
+    .imagem-pack-detalhe img {
+      width: 100%;
+      height: auto;
+      border-radius: inherit;
+      object-fit: contain;
+    }
+
+    /* DOBRA 4 */
+    .dobra-4 {
+      background: var(--bg-section);
+      padding: 92px 0 0;
+    }
+
+    .dobra-4 .titulo-impacto {
+      font-size: clamp(32px, 8.65vw, 41px);
+      line-height: 1.12;
+    }
+
+    .subtitulo-modelos {
+      margin: 20px auto 0;
+      color: var(--text-muted);
+      font-size: clamp(15px, 4vw, 18px);
+      font-weight: 400;
+      line-height: 1.35;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .carrossel-modelos {
+      position: relative;
+      width: 100%;
+      margin: 62px auto 0;
+    }
+
+    .janela-modelos {
+      width: 100%;
+      border-radius: 12px;
+      background: #ffffff;
+      cursor: grab;
+      overflow: hidden;
+      touch-action: pan-y;
+      user-select: none;
+    }
+
+    .janela-modelos.arrastando {
+      cursor: grabbing;
+    }
+
+    .trilha-modelos {
+      display: flex;
+      transition: transform 420ms ease;
+      will-change: transform;
+    }
+
+    .trilha-modelos.arrastando {
+      transition: none;
+    }
+
+    .slide-modelo {
+      flex: 0 0 100%;
+      margin: 0;
+      background: #ffffff;
+    }
+
+    .slide-modelo img {
+      width: 100%;
+      min-height: clamp(620px, 145vw, 760px);
+      height: auto;
+      object-fit: contain;
+      user-select: none;
+    }
+
+    .seta-modelos {
+      position: absolute;
+      top: 50%;
+      z-index: 3;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(18, 22, 28, 0.92);
+      color: #ffffff;
+      cursor: pointer;
+      transform: translateY(-50%);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+    }
+
+    .seta-modelos svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .seta-modelos.anterior {
+      left: 10px;
+    }
+
+    .seta-modelos.proximo {
+      right: 10px;
+    }
+
+    .bolinhas-modelos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 17px;
+    }
+
+    .bolinha-modelo {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.34);
+      cursor: pointer;
+    }
+
+    .bolinha-modelo.ativo {
+      width: 22px;
+      border-radius: 999px;
+      background: var(--orange);
+    }
+
+    /* DOBRA 5 */
+    .dobra-5 {
+      background: var(--bg-black);
+      padding: 76px 0 75px;
+    }
+
+    .dobra-5 .titulo-impacto {
+      font-size: clamp(25px, 7.25vw, 34px);
+      line-height: 1.15;
+    }
+
+    .lista-depoimentos {
+      display: grid;
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .card-depoimento {
+      min-height: 0;
+      padding: 22px 30px 20px;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      background: var(--card-bg);
+    }
+
+    .estrelas {
+      display: flex;
+      gap: 5px;
+      color: var(--orange);
+      font-size: 23px;
+      line-height: 1;
+    }
+
+    .depoimento-texto {
+      margin: 18px 0 0;
+      color: var(--text-muted);
+      font-size: clamp(15px, 4.15vw, 19px);
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .autor-depoimento {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .avatar-depoimento {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #2d333d;
+      object-fit: cover;
+    }
+
+    .nome-depoimento {
+      display: block;
+      color: #f1f1f2;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    .cidade-depoimento {
+      display: block;
+      margin-top: 4px;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.1;
+    }
+
+    /* DOBRA 6 */
+    .dobra-6 {
+      background: var(--bg-section);
+      padding: 77px 0 29px;
+    }
+
+    .dobra-6 .titulo-impacto {
+      font-size: clamp(31px, 8.45vw, 40px);
+      line-height: 1.12;
+    }
+
+    .subtitulo-conteudo {
+      max-width: 398px;
+      margin: 18px auto 0;
+      color: var(--text-muted);
+      font-size: clamp(18px, 4.85vw, 23px);
+      font-weight: 400;
+      line-height: 1.28;
+      text-align: center;
+    }
+
+    .subtitulo-conteudo span {
+      display: block;
+      white-space: nowrap;
+    }
+
+    .lista-conteudo {
+      display: grid;
+      gap: 20px;
+      margin-top: 52px;
+    }
+
+    .item-conteudo {
+      display: flex;
+      align-items: center;
+      min-height: 52px;
+      padding: 12px 18px;
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      background: var(--card-bg);
+    }
+
+    .icone-conteudo {
+      flex: 0 0 auto;
+      width: 23px;
+      height: 23px;
+      margin-right: 15px;
+      color: var(--orange);
+    }
+
+    .item-conteudo span {
+      color: #ececef;
+      font-size: clamp(15px, 4.05vw, 19px);
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    /* DOBRA 7 */
+    .dobra-7 {
+      background: var(--bg-section);
+      padding: 17px 0 67px;
+    }
+
+    .box-bonus {
+      padding: 36px 34px 33px;
+      border: 1px solid rgba(255, 147, 0, 0.38);
+      border-radius: 22px;
+      background: var(--card-bg);
+    }
+
+    .titulo-bonus {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin: 0;
+      color: var(--orange);
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-size: clamp(25px, 6.75vw, 32px);
+      font-weight: 400;
+      line-height: 1.1;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .icone-presente {
+      width: 36px;
+      height: 36px;
+      flex: 0 0 auto;
+      color: var(--orange);
+    }
+
+    .lista-bonus {
+      display: grid;
+      gap: 17px;
+      margin-top: 34px;
+    }
+
+    .item-bonus {
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      gap: 18px;
+      align-items: center;
+      min-height: 101px;
+      padding: 20px;
+      border-radius: 15px;
+      background: #20242b;
+    }
+
+    .icone-bonus {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: rgba(255, 147, 0, 0.24);
+      color: var(--orange);
+    }
+
+    .icone-bonus svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    .bonus-numero {
+      display: block;
+      color: var(--orange);
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-size: clamp(23px, 6.1vw, 29px);
+      font-weight: 400;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .bonus-texto {
+      display: block;
+      margin-top: 5px;
+      color: #f0f0f1;
+      font-size: clamp(17px, 4.7vw, 23px);
+      font-family: "Inter", Arial, sans-serif;
+      font-weight: 300;
+      line-height: 1.34;
+    }
+
+    .bonus-preco {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+      font-family: "Inter", Arial, sans-serif;
+      line-height: 1;
+    }
+
+    .bonus-valor {
+      color: var(--text-muted);
+      font-size: clamp(13px, 3.6vw, 16px);
+      font-weight: 400;
+      text-decoration: line-through;
+      text-decoration-color: var(--orange);
+      text-decoration-thickness: 2px;
+    }
+
+    .bonus-gratis {
+      color: var(--orange);
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-size: clamp(16px, 4.35vw, 20px);
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    .bonus-total {
+      margin: 22px 0 0;
+      padding: 17px 18px;
+      border: 1px solid rgba(255, 147, 0, 0.35);
+      border-radius: 12px;
+      background: rgba(255, 147, 0, 0.08);
+      color: #f0f0f1;
+      font-family: "Inter", Arial, sans-serif;
+      font-size: clamp(16px, 4.4vw, 20px);
+      font-weight: 400;
+      line-height: 1.35;
+      text-align: center;
+    }
+
+    .bonus-total strong {
+      color: var(--orange);
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    /* DOBRA 8 */
+    .dobra-8 {
+      background: var(--bg-black);
+      padding: 71px 0 30px;
+    }
+
+    .dobra-8 .titulo-impacto {
+      font-size: clamp(29px, 8vw, 38px);
+      line-height: 1.12;
+    }
+
+    .subtitulo-oferta {
+      margin: 18px auto 0;
+      color: var(--text-muted);
+      font-family: "Inter", Arial, sans-serif;
+      font-size: clamp(17px, 4.7vw, 22px);
+      font-weight: 400;
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    .card-oferta {
+      margin-top: 45px;
+      padding: 35px 33px 30px;
+      border: 1px solid rgba(255, 147, 0, 0.48);
+      border-top-width: 5px;
+      border-radius: 13px;
+      background: var(--card-bg);
+    }
+
+    .nome-kit {
+      margin: 0;
+      color: #f4f4f5;
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-size: clamp(29px, 7.5vw, 36px);
+      font-weight: 400;
+      line-height: 1;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .promocao-kit {
+      margin: 28px 0 0;
+      color: #d7d9de;
+      font-family: "Inter", Arial, sans-serif;
+      font-size: clamp(15px, 4vw, 18px);
+      font-weight: 400;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    .preco-antigo {
+      color: var(--text-muted);
+      text-decoration: line-through;
+      text-decoration-color: var(--orange);
+      text-decoration-thickness: 2px;
+    }
+
+    .preco-kit {
+      margin: 10px 0 27px;
+      color: var(--orange);
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-size: clamp(52px, 14.3vw, 70px);
+      font-weight: 400;
+      line-height: 0.95;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .lista-oferta {
+      display: grid;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .lista-oferta li {
+      position: relative;
+      padding-left: 34px;
+      color: #dedee1;
+      font-family: "Inter", Arial, sans-serif;
+      font-size: clamp(14px, 3.95vw, 18px);
+      font-weight: 400;
+      line-height: 1.42;
+    }
+
+    .lista-oferta li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: -1px;
+      color: var(--orange);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .acao-oferta {
+      margin-top: 37px;
+      text-align: center;
+    }
+
+    .acao-oferta .botao-principal {
+      width: 100%;
+      max-width: 306px;
+      min-height: 62px;
+      font-size: clamp(15px, 4vw, 20px);
+    }
+
+    .observacao-oferta {
+      margin: 18px 0 0;
+      color: #7d8491;
+      font-size: clamp(10px, 2.9vw, 13px);
+      font-weight: 800;
+      line-height: 1.35;
+      text-align: center;
+    }
+
+    /* DOBRA 9 */
+    .dobra-9 {
+      background: var(--bg-section);
+      padding: 72px 0 69px;
+    }
+
+    .dobra-9 .titulo-impacto {
+      font-size: clamp(28px, 7.7vw, 37px);
+      line-height: 1.15;
+    }
+
+    .subtitulo-projetos {
+      margin: 16px auto 0;
+      color: var(--text-muted);
+      font-size: clamp(17px, 4.6vw, 21px);
+      font-weight: 400;
+      line-height: 1.35;
+      text-align: center;
+    }
+
+    .vitrine-projetos {
+      position: relative;
+      width: calc(100% + 16px);
+      margin-top: 47px;
+      overflow: hidden;
+    }
+
+    .faixa-projetos {
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+    }
+
+    .faixa-projetos::-webkit-scrollbar {
+      display: none;
+    }
+
+    .slide-projeto {
+      flex: 0 0 min(78vw, 310px);
+      padding: 13px 13px 15px;
+      border: 1px solid var(--card-border);
+      border-radius: 11px;
+      background: var(--card-bg);
+    }
+
+    .slide-projeto img {
+      width: 100%;
+      min-height: clamp(510px, 128vw, 642px);
+      border-radius: 10px;
+      background: #ffffff;
+      object-fit: cover;
+    }
+
+    .legenda-projeto {
+      display: block;
+      margin-top: 12px;
+      color: #e8e8ea;
+      font-family: "Inter", Arial, sans-serif;
+      font-size: clamp(15px, 4.04vw, 19px);
+      font-weight: 400;
+      line-height: 1.1;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .carrossel-projetos {
+      margin-top: 47px;
+    }
+
+    .carrossel-projetos .janela-modelos {
+      padding: 10px;
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+    }
+
+    .carrossel-projetos .slide-modelo {
+      background: var(--card-bg);
+    }
+
+    .carrossel-projetos .slide-modelo img {
+      min-height: clamp(510px, 128vw, 642px);
+      border-radius: 8px;
+      background: #ffffff;
+      object-fit: contain;
+    }
+
+    .controle-carrossel {
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border: 0;
+      border-radius: 50%;
+      background: #171c23;
+      color: #8d96a3;
+      cursor: pointer;
+      transform: translateY(-50%);
+    }
+
+    .controle-carrossel svg {
+      width: 19px;
+      height: 19px;
+    }
+
+    .controle-carrossel.anterior {
+      left: -16px;
+    }
+
+    .controle-carrossel.proximo {
+      right: 0;
+    }
+
+    /* DOBRA 10 */
+    .dobra-10 {
+      background: var(--bg-black);
+      padding: 74px 0 73px;
+      text-align: center;
+    }
+
+    .imagem-garantia {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 116px;
+      height: 116px;
+      margin: 0 auto 27px;
+      overflow: hidden;
+    }
+
+    .imagem-garantia img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .dobra-10 .titulo-impacto {
+      font-size: clamp(30px, 8.27vw, 39px);
+      line-height: 1.12;
+    }
+
+    .texto-garantia {
+      max-width: 386px;
+      margin: 27px auto 0;
+      color: var(--text-muted);
+      font-size: clamp(17px, 4.35vw, 21px);
+      font-weight: 400;
+      line-height: 1.45;
+    }
+
+    .texto-garantia span {
+      display: block;
+      white-space: nowrap;
+    }
+
+    /* DOBRA 11 */
+    .dobra-11 {
+      background: var(--bg-section);
+      padding: 73px 0 70px;
+    }
+
+    .dobra-11 .titulo-impacto {
+      font-size: clamp(29px, 8vw, 38px);
+      line-height: 1.12;
+      text-align: left;
+    }
+
+    .lista-faq {
+      display: grid;
+      gap: 14px;
+      margin-top: 45px;
+    }
+
+    .item-faq {
+      border: 1px solid var(--card-border);
+      border-radius: 10px;
+      background: var(--card-bg);
+      overflow: hidden;
+    }
+
+    .botao-faq {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      width: 100%;
+      min-height: 74px;
+      padding: 20px 14px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .pergunta-faq {
+      color: #f1f1f2;
+      font-family: "Anton", Impact, "Arial Black", sans-serif;
+      font-size: clamp(12px, 3.45vw, 16px);
+      font-weight: 400;
+      line-height: 1.22;
+      white-space: nowrap;
+    }
+
+    .botao-faq svg {
+      flex: 0 0 auto;
+      width: 19px;
+      height: 19px;
+      color: #d9dde3;
+      transition: transform 180ms ease;
+    }
+
+    .item-faq.aberto .botao-faq svg {
+      transform: rotate(180deg);
+    }
+
+    .resposta-faq {
+      margin: 0;
+      max-height: 0;
+      padding: 0 25px;
+      color: var(--text-muted);
+      font-family: "Inter", Arial, sans-serif;
+      font-size: clamp(14px, 3.9vw, 17px);
+      font-weight: 400;
+      line-height: 1.42;
+      opacity: 0;
+      overflow: hidden;
+      transform: translateY(-8px);
+      transition: max-height 260ms ease, opacity 220ms ease, padding-bottom 220ms ease, transform 220ms ease;
+    }
+
+    .item-faq.aberto .resposta-faq {
+      max-height: 190px;
+      padding-bottom: 22px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .rodape {
+      padding: 25px 16px 30px;
+      background: var(--bg-black);
+      color: var(--text-muted);
+      font-family: "Inter", Arial, sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.4;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        width: min(100%, 456px);
+      }
+
+      .dobra-1 {
+        padding-top: 104px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .botao-principal {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="pagina">
+    <div class="logo-topo" aria-label="Pack Ouro">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-8 8L6.6 20.4a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 8-8Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"/>
+      </svg>
+      <span>Pack Ouro</span>
+    </div>
+    <div class="linha-logo" aria-hidden="true"></div>
+
+    <!-- DOBRA 1 -->
+    <section class="dobra dobra-1" id="inicio">
+      <div class="container">
+        <h1 class="titulo-impacto">Pack Ouro do Serralheiro</h1>
+
+        <p class="subtitulo-hero">
+          <span class="linha-subtitulo">+ de 3000 Projetos prontos de serralheria para</span>
+          <strong>copiar, fabricar e vender</strong>
+        </p>
+
+        <figure class="imagem-produto">
+          <img src="imagem01.png" alt="Pack Ouro do Serralheiro com projetos de serralheria">
+        </figure>
+
+        <p class="texto-apoio">
+          Não é curso. São projetos testados, com medidas, lista de material, custo e lucro estimado. Tudo pronto para você fabricar e vender.
+        </p>
+
+        <div class="acao-hero">
+          <a class="botao-principal botao-ancora" href="#botao-oferta">Quero o pack agora</a>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DOBRA 1 -->
+
+    <!-- DOBRA 2 -->
+    <section class="dobra dobra-2" id="identificacao">
+      <div class="container">
+        <h2 class="titulo-impacto">Você se identifica?</h2>
+
+        <p class="intro-dobra-2">
+          O problema não é falta de serviço. É falta de projeto certo.
+        </p>
+
+        <div class="lista-dores">
+          <article class="card-dor">
+            <svg class="icone-dor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 20h9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+            <h3>Perde tempo desenhando</h3>
+            <p>Horas no papel ou no computador tentando criar projetos do zero.</p>
+          </article>
+
+          <article class="card-dor">
+            <svg class="icone-dor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9.09 9a3 3 0 1 1 5.83 1c0 2-3 2-3 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <path d="M12 17h.01" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"/>
+              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <h3>Não sabe o que fabricar</h3>
+            <p>Fica sem ideias de produtos que realmente vendem no mercado.</p>
+          </article>
+
+          <article class="card-dor">
+            <svg class="icone-dor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m3 7 6 6 4-4 8 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <path d="M21 10v7h-7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+            <h3>Lucro baixo</h3>
+            <p>Fabrica peças sem saber o custo real e acaba vendendo barato demais.</p>
+          </article>
+
+          <article class="card-dor">
+            <svg class="icone-dor" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M3 21v-2a6 6 0 0 1 6-6h1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="m17 14 5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="m22 14-5 5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+            </svg>
+            <h3>Perde clientes</h3>
+            <p>Sem um catálogo profissional, o cliente não confia e vai para o concorrente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DOBRA 2 -->
+
+    <!-- DOBRA 3 -->
+    <section class="dobra dobra-3" id="o-que-e-o-pack">
+      <div class="container">
+        <h2 class="titulo-impacto">O que é o pack?</h2>
+
+        <p class="texto-pack">
+          <span>É um pacote completo com + de 3000</span>
+          <span>projetos de serralheria prontos,</span>
+          <span>organizados por categoria, com medidas,</span>
+          <span>material, custo e preço de venda.</span>
+        </p>
+
+        <p class="frase-pack">
+          <span>Você não aprende teoria. Você copia o</span>
+          <span>projeto, fabrica e vende.</span>
+        </p>
+
+        <figure class="imagem-pack-detalhe">
+          <img src="imagem02.png" alt="Pack Ouro do Serralheiro com projetos e bônus">
+        </figure>
+      </div>
+    </section>
+    <!-- FIM DOBRA 3 -->
+
+    <!-- DOBRA 4 -->
+    <section class="dobra dobra-4" id="modelos">
+      <div class="container">
+        <h2 class="titulo-impacto">Veja alguns modelos:</h2>
+
+        <p class="subtitulo-modelos">
+          + 3000 projetos em diversas categorias!
+        </p>
+
+        <div class="carrossel-modelos" data-carrossel-modelos>
+          <button class="seta-modelos anterior" type="button" aria-label="Modelo anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+          </button>
+
+          <div class="janela-modelos">
+            <div class="trilha-modelos">
+              <figure class="slide-modelo">
+                <img src="imagem03.jpg" alt="Modelo de projeto 1">
+              </figure>
+              <figure class="slide-modelo">
+                <img src="imagem04.jpg" alt="Modelo de projeto 2">
+              </figure>
+              <figure class="slide-modelo">
+                <img src="imagem05.jpg" alt="Modelo de projeto 3">
+              </figure>
+              <figure class="slide-modelo">
+                <img src="imagem06.jpg" alt="Modelo de projeto 4">
+              </figure>
+              <figure class="slide-modelo">
+                <img src="imagem07.png" alt="Modelo de projeto 5">
+              </figure>
+              <figure class="slide-modelo">
+                <img src="imagem08.jpg" alt="Modelo de projeto 6">
+              </figure>
+              <figure class="slide-modelo">
+                <img src="imagem09.jpg" alt="Modelo de projeto 7">
+              </figure>
+              <figure class="slide-modelo">
+                <img src="imagem10.jpg" alt="Modelo de projeto 8">
+              </figure>
+              <figure class="slide-modelo">
+                <img src="imagem11.jpg" alt="Modelo de projeto 9">
+              </figure>
+              <figure class="slide-modelo">
+                <img src="imagem12.jpg" alt="Modelo de projeto 10">
+              </figure>
+              <figure class="slide-modelo">
+                <img src="imagem13.jpg" alt="Modelo de projeto 11">
+              </figure>
+            </div>
+          </div>
+
+          <button class="seta-modelos proximo" type="button" aria-label="Próximo modelo">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m9 18 6-6-6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+          </button>
+
+          <div class="bolinhas-modelos" aria-label="Indicadores do carrossel">
+            <button class="bolinha-modelo ativo" type="button" aria-label="Ir para modelo 1"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para modelo 2"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para modelo 3"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para modelo 4"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para modelo 5"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para modelo 6"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para modelo 7"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para modelo 8"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para modelo 9"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para modelo 10"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para modelo 11"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DOBRA 4 -->
+
+    <!-- DOBRA 5 -->
+    <section class="dobra dobra-5" id="depoimentos">
+      <div class="container">
+        <h2 class="titulo-impacto">Quem já comprou aprova:</h2>
+
+        <div class="lista-depoimentos">
+          <article class="card-depoimento">
+            <div class="estrelas" aria-label="5 estrelas">
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+            </div>
+
+            <p class="depoimento-texto">
+              "Já fiz mais de 30 projetos do pack. O que mais vende são os portões e as grades. Material de primeira qualidade!"
+            </p>
+
+            <div class="autor-depoimento">
+              <img class="avatar-depoimento" src="imagem14.jpg" alt="Foto de Carlos Silva">
+              <div>
+                <strong class="nome-depoimento">Carlos Silva</strong>
+                <span class="cidade-depoimento">São Paulo, SP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-depoimento">
+            <div class="estrelas" aria-label="5 estrelas">
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+            </div>
+
+            <p class="depoimento-texto">
+              "Melhor investimento que fiz. Os projetos vêm com tudo: medidas, material, custo. É só fabricar e vender."
+            </p>
+
+            <div class="autor-depoimento">
+              <img class="avatar-depoimento" src="imagem15.jpg" alt="Foto de Roberto Almeida">
+              <div>
+                <strong class="nome-depoimento">Roberto Almeida</strong>
+                <span class="cidade-depoimento">Belo Horizonte, MG</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-depoimento">
+            <div class="estrelas" aria-label="5 estrelas">
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+              <span>&#9733;</span>
+            </div>
+
+            <p class="depoimento-texto">
+              "Eu não tinha ideia do que fabricar. Com o pack, comecei a produzir escadas e corrimãos. Meu faturamento triplicou!"
+            </p>
+
+            <div class="autor-depoimento">
+              <img class="avatar-depoimento" src="imagem16.jpg" alt="Foto de José Santos">
+              <div>
+                <strong class="nome-depoimento">José Santos</strong>
+                <span class="cidade-depoimento">Curitiba, PR</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DOBRA 5 -->
+
+    <!-- DOBRA 6 -->
+    <section class="dobra dobra-6" id="conteudo">
+      <div class="container">
+        <h2 class="titulo-impacto">O que vem dentro:</h2>
+
+        <p class="subtitulo-conteudo">
+          <span>Cada projeto inclui tudo que você precisa</span>
+          <span>para fabricar e vender</span>
+        </p>
+
+        <div class="lista-conteudo">
+          <div class="item-conteudo">
+            <svg class="icone-conteudo" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m16 2 6 6L8 22l-6-6Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+              <path d="m7 7 2 2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="m10 4 2 2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="m4 10 2 2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+            </svg>
+            <span>Medidas exatas de cada peça</span>
+          </div>
+
+          <div class="item-conteudo">
+            <svg class="icone-conteudo" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m12 2 8 4.5v9L12 20l-8-4.5v-9Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+              <path d="M12 11 4 6.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="m12 11 8-4.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="M12 11v9" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+            </svg>
+            <span>Lista completa de material</span>
+          </div>
+
+          <div class="item-conteudo">
+            <svg class="icone-conteudo" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="6" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M8.5 8.5 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="M8.5 15.5 20 4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+            </svg>
+            <span>Esquema de corte detalhado</span>
+          </div>
+
+          <div class="item-conteudo">
+            <svg class="icone-conteudo" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 18h6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="M10 22h4" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="M8 14a6 6 0 1 1 8 0c-1.2 1-1.5 2-1.5 4h-5c0-2-.3-3-1.5-4Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+            <span>Dicas de montagem e acabamento</span>
+          </div>
+
+          <div class="item-conteudo">
+            <svg class="icone-conteudo" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2v20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="M17 6.5A4 4 0 0 0 12 5c-3 0-5 1.3-5 3.5S9 12 12 12s5 1.3 5 3.5S15 19 12 19a5 5 0 0 1-5-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+            </svg>
+            <span>Custo médio de produção</span>
+          </div>
+
+          <div class="item-conteudo">
+            <svg class="icone-conteudo" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 13 13 20a2 2 0 0 1-2.8 0L3 12.8V4h8.8l8.2 8.2a2 2 0 0 1 0 2.8Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+              <circle cx="8" cy="8" r="1.5" fill="currentColor"/>
+            </svg>
+            <span>Sugestão de preço de venda</span>
+          </div>
+
+          <div class="item-conteudo">
+            <svg class="icone-conteudo" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m3 17 6-6 4 4 7-8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              <path d="M14 7h6v6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+            <span>Lucro estimado por peça</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DOBRA 6 -->
+
+    <!-- DOBRA 7 -->
+    <section class="dobra dobra-7" id="bonus">
+      <div class="container">
+        <div class="box-bonus">
+          <h2 class="titulo-bonus">
+            <svg class="icone-presente" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+              <path d="M2 7h20v5H2Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+              <path d="M12 22V7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+              <path d="M12 7H8.5a2.5 2.5 0 1 1 2.5-2.5V7Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+              <path d="M12 7h3.5A2.5 2.5 0 1 0 13 4.5V7Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+            <span>4 bônus inclusos</span>
+          </h2>
+
+          <div class="lista-bonus">
+            <article class="item-bonus">
+              <span class="icone-bonus" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="6" y="3" width="12" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <path d="M9 7h6M9 11h1M12 11h1M15 11h1M9 15h1M12 15h1M15 15h1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+                </svg>
+              </span>
+              <span>
+                <strong class="bonus-numero">Bônus 1</strong>
+                <span class="bonus-texto">Planilha automática de precificação</span>
+                <span class="bonus-preco">
+                  <span class="bonus-valor">R$29,90</span>
+                  <span class="bonus-gratis">Grátis</span>
+                </span>
+              </span>
+            </article>
+
+            <article class="item-bonus">
+              <span class="icone-bonus" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M3 17V6a2 2 0 0 1 2-2h10v13" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+                  <path d="M15 9h3l3 4v4h-6" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+                  <circle cx="7" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                  <circle cx="17" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+              <span>
+                <strong class="bonus-numero">Bônus 2</strong>
+                <span class="bonus-texto">Lista de fornecedores</span>
+                <span class="bonus-preco">
+                  <span class="bonus-valor">R$29,90</span>
+                  <span class="bonus-gratis">Grátis</span>
+                </span>
+              </span>
+            </article>
+
+            <article class="item-bonus">
+              <span class="icone-bonus" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+                  <path d="M4 5.5v16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+                  <path d="M8 7h8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"/>
+                </svg>
+              </span>
+              <span>
+                <strong class="bonus-numero">Bônus 3</strong>
+                <span class="bonus-texto">Guia: quanto cobrar sem perder serviço</span>
+                <span class="bonus-preco">
+                  <span class="bonus-valor">R$29,90</span>
+                  <span class="bonus-gratis">Grátis</span>
+                </span>
+              </span>
+            </article>
+
+            <article class="item-bonus">
+              <span class="icone-bonus" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 22s7-5.2 7-12a7 7 0 0 0-14 0c0 6.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"/>
+                  <circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </span>
+              <span>
+                <strong class="bonus-numero">Bônus 4</strong>
+                <span class="bonus-texto">Projetos mais pedidos em cidades pequenas</span>
+                <span class="bonus-preco">
+                  <span class="bonus-valor">R$29,90</span>
+                  <span class="bonus-gratis">Grátis</span>
+                </span>
+              </span>
+            </article>
+          </div>
+
+          <p class="bonus-total">
+            Todos os bônus somam R$119,60. Hoje: <strong>Grátis</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DOBRA 7 -->
+
+    <!-- DOBRA 8 -->
+    <section class="dobra dobra-8" id="preco">
+      <div class="container">
+        <h2 class="titulo-impacto">Garanta já o seu!</h2>
+
+        <p class="subtitulo-oferta">
+          Investimento único • Acesso imediato
+        </p>
+
+        <div class="card-oferta">
+          <h3 class="nome-kit">Kit Profissional</h3>
+
+          <p class="promocao-kit">De <span class="preco-antigo">R$49,90</span> por apenas</p>
+          <p class="preco-kit">R$10</p>
+
+          <ul class="lista-oferta">
+            <li>+ de 3000 projetos</li>
+            <li>Planilha automática de precificação</li>
+            <li>Lista de fornecedores</li>
+            <li>Guia: quanto cobrar sem perder serviço</li>
+            <li>Projetos mais pedidos em cidades pequenas</li>
+            <li>300 Projetos de portões</li>
+            <li>Projetos de carretinhas</li>
+            <li>Projetos de reboques</li>
+            <li>Projetos de carretas/plataformas</li>
+            <li>Projetos automotivos</li>
+            <li>600 projetos de móveis industriais</li>
+            <li>500 projetos de Estruturas rápidas</li>
+            <li>50 projetos de churrasqueiras</li>
+            <li>100 projetos de aparelho de academia</li>
+            <li>Certificado</li>
+            <li>Acesso vitalício</li>
+          </ul>
+
+          <div class="acao-oferta">
+            <a class="botao-principal botao-checkout" id="botao-oferta" href="https://checkout.wiven.com.br/checkout/cmroaj9bi0em201og4gax7wbc?offer=LN84WVU">Quero garantir agora</a>
+          </div>
+
+          <p class="observacao-oferta">
+            Acesso imediato pelo e-mail
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DOBRA 8 -->
+
+    <!-- DOBRA 9 -->
+    <section class="dobra dobra-9" id="projetos-vida-toda">
+      <div class="container">
+        <h2 class="titulo-impacto">Projeto para a vida toda</h2>
+
+        <p class="subtitulo-projetos">
+          Lembrando: São mais de 3000 projetos!
+        </p>
+
+        <div class="carrossel-modelos carrossel-projetos" data-carrossel-modelos>
+          <button class="seta-modelos anterior" type="button" aria-label="Projeto anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m15 18-6-6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+          </button>
+
+          <div class="janela-modelos">
+            <div class="trilha-modelos">
+              <figure class="slide-modelo">
+                <img src="imagem17.png" alt="Projeto de serralheria 1">
+                <figcaption class="legenda-projeto">Projeto 1</figcaption>
+              </figure>
+
+              <figure class="slide-modelo">
+                <img src="imagem18.png" alt="Projeto de serralheria 2">
+                <figcaption class="legenda-projeto">Projeto 2</figcaption>
+              </figure>
+
+              <figure class="slide-modelo">
+                <img src="imagem19.png" alt="Projeto de serralheria 3">
+                <figcaption class="legenda-projeto">Projeto 3</figcaption>
+              </figure>
+
+              <figure class="slide-modelo">
+                <img src="imagem20.png" alt="Projeto de serralheria 4">
+                <figcaption class="legenda-projeto">Projeto 4</figcaption>
+              </figure>
+
+              <figure class="slide-modelo">
+                <img src="imagem21.png" alt="Projeto de serralheria 5">
+                <figcaption class="legenda-projeto">Projeto 5</figcaption>
+              </figure>
+
+              <figure class="slide-modelo">
+                <img src="imagem22.png" alt="Projeto de serralheria 6">
+                <figcaption class="legenda-projeto">Projeto 6</figcaption>
+              </figure>
+
+              <figure class="slide-modelo">
+                <img src="imagem23.png" alt="Projeto de serralheria 7">
+                <figcaption class="legenda-projeto">Projeto 7</figcaption>
+              </figure>
+
+              <figure class="slide-modelo">
+                <img src="imagem24.png" alt="Projeto de serralheria 8">
+                <figcaption class="legenda-projeto">Projeto 8</figcaption>
+              </figure>
+
+              <figure class="slide-modelo">
+                <img src="imagem25.png" alt="Projeto de serralheria 9">
+                <figcaption class="legenda-projeto">Projeto 9</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <button class="seta-modelos proximo" type="button" aria-label="Próximo projeto">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m9 18 6-6-6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+            </svg>
+          </button>
+
+          <div class="bolinhas-modelos" aria-label="Indicadores do carrossel de projetos">
+            <button class="bolinha-modelo ativo" type="button" aria-label="Ir para projeto 1"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para projeto 2"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para projeto 3"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para projeto 4"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para projeto 5"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para projeto 6"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para projeto 7"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para projeto 8"></button>
+            <button class="bolinha-modelo" type="button" aria-label="Ir para projeto 9"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DOBRA 9 -->
+
+    <!-- DOBRA 10 -->
+    <section class="dobra dobra-10" id="garantia">
+      <div class="container">
+        <div class="imagem-garantia">
+          <img src="garantia.png" alt="Selo de garantia">
+        </div>
+
+        <h2 class="titulo-impacto">Garantia de 7 dias</h2>
+
+        <p class="texto-garantia">
+          <span>Se dentro de 7 dias você sentir que o</span>
+          <span>Pack Ouro do Serralheiro não é</span>
+          <span>para você, basta solicitar o reembolso</span>
+          <span>direto na plataforma e devolvemos</span>
+          <span>100% do seu dinheiro. Sem perguntas,</span>
+          <span>sem burocracia. O risco é todo nosso.</span>
+        </p>
+      </div>
+    </section>
+    <!-- FIM DOBRA 10 -->
+
+    <!-- DOBRA 11 -->
+    <section class="dobra dobra-11" id="perguntas-frequentes">
+      <div class="container">
+        <h2 class="titulo-impacto">Perguntas frequentes</h2>
+
+        <div class="lista-faq">
+          <div class="item-faq">
+            <button class="botao-faq" type="button" aria-expanded="false" aria-controls="resposta-faq-1">
+              <span class="pergunta-faq">Quais as formas de Pagamento?</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              </svg>
+            </button>
+            <p class="resposta-faq" id="resposta-faq-1" aria-hidden="true">
+              Aceitamos cartão de crédito, PIX, boleto bancário e débito. O pagamento é processado por uma plataforma 100% segura.
+            </p>
+          </div>
+
+          <div class="item-faq">
+            <button class="botao-faq" type="button" aria-expanded="false" aria-controls="resposta-faq-2">
+              <span class="pergunta-faq">Ainda não recebi o Curso, o que fazer?</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              </svg>
+            </button>
+            <p class="resposta-faq" id="resposta-faq-2" aria-hidden="true">
+              Verifique sua caixa de spam ou lixo eletrônico. Caso não encontre, entre em contato pelo suporte que resolveremos rapidamente.
+            </p>
+          </div>
+
+          <div class="item-faq">
+            <button class="botao-faq" type="button" aria-expanded="false" aria-controls="resposta-faq-3">
+              <span class="pergunta-faq">Como eu recebo o Curso?</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              </svg>
+            </button>
+            <p class="resposta-faq" id="resposta-faq-3" aria-hidden="true">
+              Após a confirmação do pagamento, você receberá o acesso imediatamente pelo e-mail cadastrado.
+            </p>
+          </div>
+
+          <div class="item-faq">
+            <button class="botao-faq" type="button" aria-expanded="false" aria-controls="resposta-faq-4">
+              <span class="pergunta-faq">E se eu estiver com dúvidas?</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+              </svg>
+            </button>
+            <p class="resposta-faq" id="resposta-faq-4" aria-hidden="true">
+              Nosso suporte está disponível para ajudar você. Basta enviar uma mensagem que responderemos o mais rápido possível.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FIM DOBRA 11 -->
+  </main>
+
+  <footer class="rodape">
+    © 2026 Todos os direitos reservados.
+  </footer>
+
+  <script>
+    const easeInOutCubic = (progress) =>
+      progress < 0.5
+        ? 4 * progress * progress * progress
+        : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+    document.querySelectorAll(".botao-ancora[href^='#']").forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const target = document.querySelector(link.getAttribute("href"));
+
+        if (!target) {
+          return;
+        }
+
+        event.preventDefault();
+
+        const alinharNoFim = target.id === "botao-oferta";
+
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          target.scrollIntoView({ block: alinharNoFim ? "end" : "start" });
+          return;
+        }
+
+        const startPosition = window.scrollY;
+        const targetRect = target.getBoundingClientRect();
+        const targetTop = targetRect.top + window.scrollY;
+        const targetPosition = alinharNoFim
+          ? Math.max(0, targetTop - window.innerHeight + targetRect.height + 24)
+          : targetTop;
+        const distance = targetPosition - startPosition;
+        const duration = 1200;
+        let startTime = null;
+
+        const animateScroll = (currentTime) => {
+          if (!startTime) {
+            startTime = currentTime;
+          }
+
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+
+          window.scrollTo(0, startPosition + distance * easeInOutCubic(progress));
+
+          if (progress < 1) {
+            requestAnimationFrame(animateScroll);
+          }
+        };
+
+        requestAnimationFrame(animateScroll);
+      });
+    });
+
+    document.querySelectorAll(".item-faq").forEach((item) => {
+      const botao = item.querySelector(".botao-faq");
+      const resposta = document.getElementById(botao?.getAttribute("aria-controls"));
+
+      if (!botao || !resposta) {
+        return;
+      }
+
+      botao.addEventListener("click", () => {
+        const jaAberto = botao.getAttribute("aria-expanded") === "true";
+
+        document.querySelectorAll(".item-faq").forEach((outroItem) => {
+          const outroBotao = outroItem.querySelector(".botao-faq");
+          const outraResposta = document.getElementById(outroBotao?.getAttribute("aria-controls"));
+
+          outroItem.classList.remove("aberto");
+          outroBotao?.setAttribute("aria-expanded", "false");
+          outraResposta?.setAttribute("aria-hidden", "true");
+        });
+
+        if (!jaAberto) {
+          item.classList.add("aberto");
+          botao.setAttribute("aria-expanded", "true");
+          resposta.setAttribute("aria-hidden", "false");
+        }
+      });
+    });
+
+    document.querySelectorAll("[data-carrossel-modelos]").forEach((carrossel) => {
+      const janela = carrossel.querySelector(".janela-modelos");
+      const trilha = carrossel.querySelector(".trilha-modelos");
+      const slides = Array.from(carrossel.querySelectorAll(".slide-modelo"));
+      const bolinhas = Array.from(carrossel.querySelectorAll(".bolinha-modelo"));
+      const anterior = carrossel.querySelector(".seta-modelos.anterior");
+      const proximo = carrossel.querySelector(".seta-modelos.proximo");
+      let indiceAtual = 0;
+      let arrastando = false;
+      let inicioX = 0;
+      let deslocamentoX = 0;
+      let larguraSlide = 0;
+
+      if (!janela || !trilha || slides.length === 0 || !anterior || !proximo) {
+        return;
+      }
+
+      const mostrarSlide = (novoIndice) => {
+        indiceAtual = (novoIndice + slides.length) % slides.length;
+        trilha.style.transform = `translateX(-${indiceAtual * 100}%)`;
+
+        bolinhas.forEach((bolinha, indice) => {
+          const ativo = indice === indiceAtual;
+          bolinha.classList.toggle("ativo", ativo);
+          bolinha.setAttribute("aria-current", ativo ? "true" : "false");
+        });
+      };
+
+      const iniciarArraste = (event) => {
+        if (event.button !== undefined && event.button !== 0) {
+          return;
+        }
+
+        arrastando = true;
+        inicioX = event.clientX;
+        deslocamentoX = 0;
+        larguraSlide = janela.getBoundingClientRect().width;
+        janela.classList.add("arrastando");
+        trilha.classList.add("arrastando");
+        janela.setPointerCapture?.(event.pointerId);
+      };
+
+      const moverArraste = (event) => {
+        if (!arrastando) {
+          return;
+        }
+
+        deslocamentoX = event.clientX - inicioX;
+        trilha.style.transform = `translateX(${(-indiceAtual * larguraSlide) + deslocamentoX}px)`;
+      };
+
+      const finalizarArraste = () => {
+        if (!arrastando) {
+          return;
+        }
+
+        const limiteArraste = Math.max(45, larguraSlide * 0.18);
+
+        arrastando = false;
+        janela.classList.remove("arrastando");
+        trilha.classList.remove("arrastando");
+
+        if (deslocamentoX <= -limiteArraste) {
+          mostrarSlide(indiceAtual + 1);
+        } else if (deslocamentoX >= limiteArraste) {
+          mostrarSlide(indiceAtual - 1);
+        } else {
+          mostrarSlide(indiceAtual);
+        }
+
+        deslocamentoX = 0;
+      };
+
+      anterior.addEventListener("click", () => mostrarSlide(indiceAtual - 1));
+      proximo.addEventListener("click", () => mostrarSlide(indiceAtual + 1));
+      janela.addEventListener("pointerdown", iniciarArraste);
+      janela.addEventListener("pointermove", moverArraste);
+      janela.addEventListener("pointerup", finalizarArraste);
+      janela.addEventListener("pointercancel", finalizarArraste);
+      janela.addEventListener("lostpointercapture", finalizarArraste);
+      trilha.addEventListener("dragstart", (event) => event.preventDefault());
+
+      bolinhas.forEach((bolinha, indice) => {
+        bolinha.addEventListener("click", () => mostrarSlide(indice));
+      });
+
+      mostrarSlide(0);
+    });
+
+    document.querySelectorAll(".vitrine-projetos").forEach((vitrine) => {
+      const faixa = vitrine.querySelector(".faixa-projetos");
+      const slide = vitrine.querySelector(".slide-projeto");
+      const anterior = vitrine.querySelector(".controle-carrossel.anterior");
+      const proximo = vitrine.querySelector(".controle-carrossel.proximo");
+
+      if (!faixa || !slide || !anterior || !proximo) {
+        return;
+      }
+
+      const rolarProjeto = (direcao) => {
+        const distancia = slide.getBoundingClientRect().width + 18;
+        faixa.scrollBy({
+          left: distancia * direcao,
+          behavior: "smooth"
+        });
+      };
+
+      anterior.addEventListener("click", () => rolarProjeto(-1));
+      proximo.addEventListener("click", () => rolarProjeto(1));
+    });
+  </script>
+</body>
+</html>
